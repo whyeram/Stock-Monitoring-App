@@ -46,6 +46,7 @@ function App() {
   return (
     <div className="stock-app">
       <div className='stock-search'>
+      <h1 className='stock-text'>Search a stock</h1>
         <form>
           <input type="text" placeholder='Search' className='stock-input' onChange={handleChange} />
         </form>

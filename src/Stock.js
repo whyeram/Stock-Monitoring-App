@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Stock.css';
 const Stock = ({ name, symbol, priceOpen, dayHigh, dayLow, price, priceChange, tradeVolume }) => {
     return (<div className="stock-container">
         <div className="stock-row">
@@ -14,9 +14,9 @@ const Stock = ({ name, symbol, priceOpen, dayHigh, dayLow, price, priceChange, t
                 <p className="stock-price">₹{price}</p>
                 {
                     priceChange > 0 ?
-                        (<p className="stock-percent green">%{priceChange.toFixed(2)}</p>)
+                        (<p className="stock-percent green">{priceChange.toFixed(2)}%</p>)
                         :
-                        (<p className="stock-percent red">%{priceChange.toFixed(2)}</p>)
+                        (<p className="stock-percent red">{priceChange.toFixed(2)}%</p>)
                 }
                 <p className="stock-volume">{tradeVolume}</p>
 
